@@ -16,6 +16,18 @@ var tmpl = ' <li id="ID">' +
 
 $(document).ready(function(){
 
+    for(var i =0; i< data.length; i++ ){
+     
+        
+  $(".cards").append(tmpl.replace("ID", 'i').replace("WORD", data[i].word_en));
+        
+        
+        
+  /*      
+        $(".cards").append(tmpl.replace("ID",     data[i]).replace("WORD",data[i].word_en).replace("SOLUTION", data[i].word_de) ;
+    }
+    */
+    
 
 });
 
